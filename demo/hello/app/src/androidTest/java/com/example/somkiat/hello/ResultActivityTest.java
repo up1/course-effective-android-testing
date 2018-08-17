@@ -1,6 +1,8 @@
 package com.example.somkiat.hello;
 
+import android.content.Context;
 import android.content.Intent;
+import android.support.test.InstrumentationRegistry;
 import android.support.test.rule.ActivityTestRule;
 
 import org.junit.Rule;
@@ -21,6 +23,10 @@ public class ResultActivityTest {
 
     @Test
     public void แสดงค่า_Success() {
+        Context appContext = InstrumentationRegistry.getTargetContext();
+        SharedPreferencesUser user = new SharedPreferencesUser(appContext);
+        user.loggedIn("user");
+
         Intent intent = new Intent();
         intent.putExtra("result", "Success");
 
