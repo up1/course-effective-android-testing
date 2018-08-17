@@ -22,21 +22,24 @@ public class MainActivity extends AppCompatActivity {
         String password = edtPassword.getText().toString();
 
         // Validation
-        if(TextUtils.isEmpty(email)) {
+        if(ValidationInput.isEmpty(email)) {
             edtEmail.setError("Invalid email");
             return;
         }
-
-        if(TextUtils.isEmpty(password)) {
-            edtPassword.setError("Invalid email");
-            return;
-        }
+//
+//        if(TextUtils.isEmpty(password)) {
+//            edtPassword.setError("Invalid email");
+//            return;
+//        }
 
         // Pass
         Intent intent = new Intent(this, ResultActivity.class);
 
         if("somkiat@gmail.com".equals(email) &&
            "12345".equals(password)) {
+            SharedPreferencesUser user = new SharedPreferencesUser(this);
+            user.loggedIn("user");
+
             intent.putExtra("result", "Success");
         } else {
             intent.putExtra("result", "BAD");

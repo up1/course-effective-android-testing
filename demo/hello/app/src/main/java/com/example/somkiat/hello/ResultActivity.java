@@ -16,4 +16,10 @@ public class ResultActivity extends AppCompatActivity {
         TextView txtResult = findViewById(R.id.txtResult);
         txtResult.setText(intent.getStringExtra("result"));
     }
+
+
+    private boolean isLoggedin() {
+        SharedPreferencesUser user = new SharedPreferencesUser(this);
+        return user.get("user");
+    }
 }
