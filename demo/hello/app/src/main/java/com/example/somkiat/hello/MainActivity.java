@@ -3,6 +3,7 @@ package com.example.somkiat.hello;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.EditText;
 
@@ -20,6 +21,18 @@ public class MainActivity extends AppCompatActivity {
         String email = edtEmail.getText().toString();
         String password = edtPassword.getText().toString();
 
+        // Validation
+        if(TextUtils.isEmpty(email)) {
+            edtEmail.setError("Invalid email");
+            return;
+        }
+
+        if(TextUtils.isEmpty(password)) {
+            edtPassword.setError("Invalid email");
+            return;
+        }
+
+        // Pass
         Intent intent = new Intent(this, ResultActivity.class);
 
         if("somkiat@gmail.com".equals(email) &&
