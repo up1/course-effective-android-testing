@@ -28,20 +28,19 @@ public class MainActivity extends AppCompatActivity {
         }
 
         if(ValidationInput.isEmpty(password)) {
-            edtEmail.setError("Invalid password");
+            edtPassword.setError("Invalid password");
             return;
         }
 
         // Pass
+        // Keep user logged in
+        SharedPreferencesUser user = new SharedPreferencesUser(this);
+        user.loggedIn("user");
+
         Intent intent = new Intent(this, ResultActivity.class);
 
         if("somkiat@gmail.com".equals(email) &&
            "12345".equals(password)) {
-
-            // Keep user logged in
-            SharedPreferencesUser user = new SharedPreferencesUser(this);
-            user.loggedIn("user");
-
             intent.putExtra("result", "Success");
         } else {
             intent.putExtra("result", "BAD");

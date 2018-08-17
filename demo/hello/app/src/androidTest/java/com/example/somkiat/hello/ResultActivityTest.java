@@ -23,8 +23,10 @@ public class ResultActivityTest {
 
     @Test
     public void แสดงค่า_Success() {
-        Context appContext = InstrumentationRegistry.getTargetContext();
-        SharedPreferencesUser user = new SharedPreferencesUser(appContext);
+        Context appContext
+                = InstrumentationRegistry.getTargetContext();
+        SharedPreferencesUser user
+                = new SharedPreferencesUser(appContext);
         user.loggedIn("user");
 
         Intent intent = new Intent();
