@@ -26,17 +26,19 @@ public class MainActivity extends AppCompatActivity {
             edtEmail.setError("Invalid email");
             return;
         }
-//
-//        if(TextUtils.isEmpty(password)) {
-//            edtPassword.setError("Invalid email");
-//            return;
-//        }
+
+        if(ValidationInput.isEmpty(password)) {
+            edtEmail.setError("Invalid password");
+            return;
+        }
 
         // Pass
         Intent intent = new Intent(this, ResultActivity.class);
 
         if("somkiat@gmail.com".equals(email) &&
            "12345".equals(password)) {
+
+            // Keep user logged in
             SharedPreferencesUser user = new SharedPreferencesUser(this);
             user.loggedIn("user");
 

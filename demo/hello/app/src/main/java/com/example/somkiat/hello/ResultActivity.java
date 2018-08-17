@@ -12,13 +12,17 @@ public class ResultActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_result);
 
-        Intent intent = getIntent();
         TextView txtResult = findViewById(R.id.txtResult);
-        txtResult.setText(intent.getStringExtra("result"));
+
+        if(isLoggedIn()) {
+            Intent intent = getIntent();
+            txtResult.setText(intent.getStringExtra("result"));
+        } else {
+            txtResult.setText("HACK !!");
+        }
     }
 
-
-    private boolean isLoggedin() {
+    private boolean isLoggedIn() {
         SharedPreferencesUser user = new SharedPreferencesUser(this);
         return user.get("user");
     }

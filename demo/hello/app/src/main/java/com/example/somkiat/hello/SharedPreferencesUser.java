@@ -21,6 +21,4 @@ public class SharedPreferencesUser {
         editor.apply();
     }
 
-
-
 }
