@@ -2,9 +2,12 @@
 
 * แนวทางการทดสอบสำหรับ Android application
   * Why testing ?
-  * ชนิดของการทดสอบ
+    * Ice cream testing
+    * Pyramid testing
+    * Cupcake testing
+  * Test types for Android app
     * JVM testing
-  * Device testing
+    * Device testing
   * Local vs. on-device
 
 * Workshop :: การพัฒนาและทดสอบ Android application
