@@ -48,3 +48,15 @@
 * Mocking Tool
   * Mockito
   * instrument testing
+  
+* Continuous Integration and Delivery for Android app
+  * Build pipeline
+    * Compile
+    * Non-device testing
+    * Code coverage
+    * Packaging
+    * Device testing
+    * Keep artifact (APK file)
+    * Deploy to Google Play
+  * Tools
+  * Workshop
