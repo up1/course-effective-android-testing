@@ -9,7 +9,6 @@
     * JVM testing
     * Device testing
   * Local vs. on-device
-
 * Workshop :: การพัฒนาและทดสอบ Android application
   * อธิบายความต้องการของ Application
   * เริ่มต้นด้วยการเขียน Unit test
@@ -37,18 +36,15 @@
   * Dependency injection (DI)
   * Custom test runner
   * Test state
-
 * Robot pattern
   * What vs. How ?
   * Separation of Concern
   * Mobile app architecture
     * Model-View-Presenter (MVP)
     * Model-View-ViewModel (MVVM)
-    
 * Mocking Tool
   * Mockito
   * instrument testing
-  
 * Continuous Integration and Delivery for Android app
   * Build pipeline
     * Compile
@@ -60,3 +56,5 @@
     * Deploy to Google Play
   * Tools
   * Workshop
+  
+ ## List of Workshops
