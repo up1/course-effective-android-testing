@@ -58,3 +58,4 @@
   * Workshop
   
  ## List of Workshops
+ * [Hello Android Testing](https://github.com/up1/demo_hello_android_testing)
