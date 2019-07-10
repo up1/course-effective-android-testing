@@ -9,6 +9,7 @@
     * JVM testing
     * Device testing
   * Local vs. on-device
+  
 * Workshop :: การพัฒนาและทดสอบ Android application
   * อธิบายความต้องการของ Application
   * เริ่มต้นด้วยการเขียน Unit test
