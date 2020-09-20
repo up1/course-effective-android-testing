@@ -58,7 +58,10 @@
   * Tools
   * Workshop
   
- ## List of Workshops
+ ## List of Workshops with Kotlin
+ * https://github.com/up1/workshop-tdd-android-kotlin
+ 
+ ## List of Workshops with Java
  * [Hello Android Testing](https://github.com/up1/demo_hello_android_testing)
  * [Testing day 1](https://github.com/up1/workshop_android_testing_day01)
  * [Networking testing](https://github.com/up1/workshop_android_testing_with_networking)
